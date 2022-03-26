@@ -1,0 +1,14 @@
+/* Base Style Start*/
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+body {
+  min-height: 100vh;
+}
+@media screen and (max-width: 320px) {
+  * {
+    display: none;
+  }
+}
