@@ -145,14 +145,14 @@ const Navbar = ({ handleTheme }) => {
 
   return (
     <>
-      <AppBar position="sticky" sx={{ background: "#e53935" }}>
+      <AppBar position="sticky" sx={{ backgroundColor: '#009270' }}>
         <Toolbar>
-          <div style={{ flexGrow: "1", padding: ".5rem 0" }}>
+          <div style={{ flexGrow: '1', padding: '.5rem 0' }}>
             <img
               src={logo}
               onClick={() => {
-                setActive("home");
-                navigate("/");
+                setActive('home');
+                navigate('/');
               }}
               className={classes.logo}
               alt="team image"
@@ -165,14 +165,13 @@ const Navbar = ({ handleTheme }) => {
               component={Link}
               to="/"
               onClick={() => {
-                setActive("home");
+                setActive('home');
               }}
               sx={
-                (active === "" || active === "home") && {
-                  background: "#d86765",
+                (active === '' || active === 'home') && {
+                  background: '#d86765',
                 }
-              }
-            >
+              }>
               HOME
             </Button>
             <Button
@@ -180,10 +179,9 @@ const Navbar = ({ handleTheme }) => {
               component={Link}
               to="/schedule"
               onClick={() => {
-                setActive("schedule");
+                setActive('schedule');
               }}
-              sx={active === "schedule" && { background: "#d86765" }}
-            >
+              sx={active === 'schedule' && { background: '#d86765' }}>
               SCHEDULE
             </Button>
             <Button
@@ -191,10 +189,9 @@ const Navbar = ({ handleTheme }) => {
               component={Link}
               to="/prediction"
               onClick={() => {
-                setActive("prediction");
+                setActive('prediction');
               }}
-              sx={active === "prediction" && { background: "#d86765" }}
-            >
+              sx={active === 'prediction' && { background: '#d86765' }}>
               PREDICT WINNER
             </Button>
             <Button
@@ -202,10 +199,9 @@ const Navbar = ({ handleTheme }) => {
               component={Link}
               to="/bestofipl"
               onClick={() => {
-                setActive("bestofipl");
+                setActive('bestofipl');
               }}
-              sx={active === "bestofipl" && { background: "#d86765" }}
-            >
+              sx={active === 'bestofipl' && { background: '#d86765' }}>
               BEST OF IPL
             </Button>
             <Button
@@ -213,23 +209,22 @@ const Navbar = ({ handleTheme }) => {
               component={Link}
               to="/createxi"
               onClick={() => {
-                setActive("createxi");
+                setActive('createxi');
               }}
               sx={
-                (active === "createxi" || active.includes("selectxi")) && {
-                  background: "#d86765",
+                (active === 'createxi' || active.includes('selectxi')) && {
+                  background: '#d86765',
                 }
-              }
-            >
+              }>
               CREATE XI
             </Button>
           </div>
           <div className={classes.menuIcon}>
             <SportsCricketIcon
               id="basic-button"
-              aria-controls={open ? "basic-menu" : undefined}
+              aria-controls={open ? 'basic-menu' : undefined}
               aria-haspopup="true"
-              aria-expanded={open ? "true" : undefined}
+              aria-expanded={open ? 'true' : undefined}
               onClick={handleClick}
             />
           </div>

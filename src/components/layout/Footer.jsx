@@ -10,7 +10,7 @@ import LanguageIcon from '@mui/icons-material/Language';
 
 const useStyles = makeStyles((theme) => ({
   footer: {
-    backgroundColor: theme.palette.primary.main,
+    backgroundColor: '#009270',
     color: theme.palette.common.white,
     padding: '.8rem',
   },
